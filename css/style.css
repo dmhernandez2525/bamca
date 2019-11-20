@@ -2138,3 +2138,15 @@ textarea:focus, input:focus, select:focus, .bootstrap-select .dropdown-toggle:fo
     flex-direction: column;
     justify-content: center;
 }
+.RFQFORM{
+    display: none;
+}
+
+.commingSoon{
+    height: 10vh;
+    font-size: -webkit-xxx-large;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10vh;
+}
