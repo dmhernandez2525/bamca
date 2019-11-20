@@ -897,6 +897,8 @@ html, body{ height: 100%; }
 
 .tab-menu .slick-initialized .slick-slide{
 	outline:none;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .tab-menu .is-active h2{
@@ -2034,4 +2036,105 @@ textarea:focus, input:focus, select:focus, .bootstrap-select .dropdown-toggle:fo
 }
 .lolHey h1{
     color: #8dc63f;
+}
+.fixCho{
+    width: 100%;
+    display: flex;
+    justify-content: center ;
+    margin-bottom: 4%;
+}
+.fixChoDiv{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: normal; */
+    margin-bottom: 4%;
+    align-items: center;
+    margin-bottom: 4%;
+    margin-top: 4%;
+}
+.fixChoH1{
+    width:fit-content;
+}
+
+
+
+
+.containerNew {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.containerNew input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.containerNew:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.containerNew input:checked~.checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.containerNew input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.containerNew .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.CheckNew{
+    width: 100vw;
+}
+/* .CheckNew label {
+    width: fit-content;
+} */
+.FormNewNew{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

@@ -1619,7 +1619,7 @@ pre code{
         width:58.33333333%
     }
     .col-sm-6{
-        width:50%
+        width:100%
     }
     .col-sm-5{
         width:41.66666667%
@@ -5763,3 +5763,6 @@ button.close{
         display:none !important
     }
 }
+    .col-sm-6 {
+        width: 100%
+    }
