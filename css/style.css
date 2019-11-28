@@ -632,6 +632,7 @@ html, body{ height: 100%; }
     -webkit-border-radius: 999px;
     -moz-border-radius: 999px;
     border-radius: 999px;
+    width: 50%;
 }
 
 .about-images img {
