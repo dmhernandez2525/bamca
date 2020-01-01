@@ -247,18 +247,18 @@ if ( typeof Object.create !== "function" ) {
 				base.transitionTypes(base.options.transitionStyle);
 			}
 			if(base.options.autoPlay === true){
-				base.options.autoPlay = 5000;
+				base.options.autoPlay = 5000000;
 			}
 
-			base.play();
+			// base.play();
 			base.$elem.find(".owl-wrapper").css("display","block")
 
 			if(!base.$elem.is(":visible")){
 				base.watchVisibility();
 			} else {
 				setTimeout(function(){
-					base.$elem.animate({opacity: 1},200);
-				},10);
+					base.$elem.animate({opacity: 1},2000);
+				},1000);
 			}
 			base.onstartup = false;
 			base.eachMoveUpdate();
@@ -314,7 +314,8 @@ if ( typeof Object.create !== "function" ) {
 			base.checkVisible = setInterval(function(){
 				if (base.$elem.is(":visible")) {
 					base.reload();
-					base.$elem.animate({opacity: 1},200);
+          base.$elem.animate({opacity: 1},200);
+          base.stop();
 					clearInterval(base.checkVisible);
 				}
 			}, 500);
