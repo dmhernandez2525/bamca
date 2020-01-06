@@ -828,6 +828,7 @@ if ( typeof Object.create !== "function" ) {
 		},
 
 		play : function(){
+      return false
 			var base = this;
 			base.apStatus = "play";
 			if(base.options.autoPlay === false){

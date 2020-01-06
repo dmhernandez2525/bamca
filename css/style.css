@@ -691,7 +691,7 @@ html, body{ height: 100%; }
 #owl-demo .item img{
   display: block;
   width: 100%;
-  height: auto;
+  height: 29vh;
 }
 .special-box .owl-theme .owl-controls{
 	margin:0px;
@@ -836,6 +836,7 @@ html, body{ height: 100%; }
     position: relative;
     overflow: hidden;
     margin-bottom: 30px;
+    height: fit-content;
 }
 
 .offer-item img {
@@ -2144,10 +2145,21 @@ textarea:focus, input:focus, select:focus, .bootstrap-select .dropdown-toggle:fo
 }
 
 .commingSoon{
-    height: 10vh;
+    height: fit-content;
     font-size: -webkit-xxx-large;
     text-align: center;
     display: flex;
     justify-content: center;
     margin-bottom: 10vh;
+}
+
+.offer-item div {
+    width: 60%;
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    min-height: 96px;
+}
+#owl-demo .item {
+    height: 30vh;
 }
