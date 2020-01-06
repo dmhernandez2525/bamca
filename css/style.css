@@ -2163,3 +2163,7 @@ textarea:focus, input:focus, select:focus, .bootstrap-select .dropdown-toggle:fo
 #owl-demo .item {
     height: 30vh;
 }
+
+#location-footer{
+    margin: 3vh;
+}
